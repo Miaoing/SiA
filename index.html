@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sophia-in-Audition: Virtual Production with a Robot Performer</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/light.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Sophia-in-Audition: Virtual Production</h1>
+          <h1 class="title is-1 publication-title">with a Robot Performer</h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Taotao Zhou</a><sup>*1,2</sup>,</span>
+            <span class="author-block">
+              <a href=""> </a>Teng Xu</a><sup>*1,2</sup>,</span>
+            <span class="author-block">
+              Dong Zhang</a><sup>*1,2</sup>,
+            </span>
+            <span class="author-block">
+              Yuyang Jiao</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Peijun Xu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Yaoyu He</a><sup>1</sup>,
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="https://www.xu-lan.com/"> Lan Xu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.yu-jingyi.com/"> Jingyi Yu</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>ShanghaiTech University,</span>
+            <span class="author-block"><sup>2</sup>LumiAni Technology</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="./static/rnha_supp.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data (coming soon)</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/teaser.jpg" alt="Teaser Image" style="width:100%; height:auto;">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/images/teaser.jpg"
+                type="image/jpg">
+      </video> -->
+      <h2 class="subtitle has-text-centered">
+        We present a new practice of virtual production: we deploy the humanoid robot Sophia as a virtual performer inside a virtual production studio, in our case, an UltraStage composed of a controllable lighting dome analogous to Light Stage coupled with multi-camera video shooting. We call this setup Sophia-in-Audition or SiA which allows for simultaneous controls over performance, lighting, and camera movements.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video_dy_light1">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_dy_light1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video_dy_light2">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_dy_light2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video_dy_light3">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_dy_light3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video_fvv_light1">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_fvv_light1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video_fvv_light3">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_fvv_light3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video_fvv_light3">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_fvv_light4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video_fvv_light2">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_fvv_light2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video_dy_light_zoom0">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_dy_light_zoom0.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video_dy_light_zoom1">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/video_dy_light_zoom1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present Sophia-in-Audition (SiA), a new frontier in virtual production, by employing the humanoid robot Sophia within an UltraStage environment composed of a controllable lighting dome coupled with multiple cameras. We demonstrate Sophia's capability to replicate iconic film segments, follow real performers, and perform a variety of motions and expressions, showcasing her versatility as a virtual actor. 
+            Key to this process is the integration of facial motion transfer algorithms and the UltraStage's controllable lighting and multi-camera setup, enabling dynamic performances that align with the director's vision. Our comprehensive user studies indicate positive audience reception towards Sophia's performances, highlighting her potential to reduce the uncanny valley effect in virtual acting. 
+            Additionally, the immersive lighting in dynamic clips was highly rated for its naturalness and its ability to mirror professional film standards. The paper presents a first-of-its-kind multi-view robot performance video dataset with dynamic lighting, offering valuable insights for future enhancements in humanoid robotic performers and virtual production techniques. This research contributes significantly to the field by presenting a unique virtual production setup, developing tools for sophisticated performance control, and providing a comprehensive dataset and user study analysis for diverse applications.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/EFcgBDbxJHA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <!-- <h2 class="title is-3"></h2> -->
+
+        <!-- Dataset. -->
+        <!-- <h2 class="title is-3">Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            In total, <i>UltraStage</i> provides more than 2K human actions, each containing 32 8K images captured under three illuminations, resulting in a total of 192K high-quality frames. Given images captured under two gradient illuminations, we can estimate the corresponding high-quality surface normal maps. We propose to take the images captured under white light as the approximation of albedo maps.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+          autoplay muted loop playsinline
+                  width="100%">
+            <source src="./static/videos/video_dataset1.mp4"
+                    type="video/mp4">
+          </video>
+
+          <video id="replay-video"
+          autoplay muted loop playsinline
+                  width="100%">
+            <source src="./static/videos/video_dataset2.mp4"
+                    type="video/mp4">
+          </video>
+        </div> -->
+        <!--/ Dataset. -->
+
+
+        <!-- Overview. -->
+        <!-- <h3 class="title is-4">Method Pipeline</h3> -->
+        <h2 class="title is-3">Overview</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            Our Sophia-in-Audition (SiA) system exploits the latest advances in humanoid robots and virtual production. In this section, we address specific challenges to incorporate the Sophia robot as a virtual performer. We also discuss how SiA can serve as a virtual audition solution by enabling simultaneous controls over the performance, lighting, and camera movement.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+      <img id="teaser" src="./static/images/overview.jpg" alt="Overview Image" style="width:100%; height:auto;">
+
+          <!-- <video id="replay-video"
+          autoplay muted loop playsinline
+                  width="100%">
+            <source src="./static/videos/video_pipeline.mp4"
+                    type="video/mp4">
+          </video> -->
+        </div>
+        <!--/ Overview. -->
+
+        <!-- Interpolating. -->
+        <!-- <h3 class="title is-4">Method Pipeline</h3>
+        <div class="content has-text-justified">
+          <p>
+            We can also animate the scene by interpolating the deformation latent codes of two input
+            frames. Use the slider here to linearly interpolate between the left frame and the right
+            frame.
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_start.jpg"
+                  class="interpolation-image"
+                  alt="Interpolate start reference image."/>
+            <p>Start Frame</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-image-wrapper">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                    id="interpolation-slider"
+                    step="1" min="0" max="100" value="0" type="range">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_end.jpg"
+                  class="interpolation-image"
+                  alt="Interpolation end reference image."/>
+            <p class="is-bold">End Frame</p>
+          </div>
+        </div>
+        <br/> -->
+        <!--/ Interpolating. -->
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+    <div class="columns is-centered">
+
+      <!-- Capture System. -->
+      <!-- <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Capture System</h2>
+          <p>
+            <i>PlenOptic Stage Ultra</i> is composed of 460 light panels, each with 48 LED beads, resulting in a total of 22,080 individually controllable light sources that can illuminate the scene with arbitrary lighting conditions.
+          </p>
+          <video id="dollyzoom" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/video_capture_system.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div> -->
+      <!--/ Capture System. -->
+
+      <!-- Capture Process. -->
+      <!-- <div class="column">
+        <h2 class="title is-3">Capture Process</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              For each pose, we capture it by 32 surrounding cameras under three lighting conditions: color gradient illumination, inverse color gradient illumination, and white light. The three lighting patterns are switched at 5fps.
+            </p>
+            <video id="matting-video" autoplay muted playsinline height="100%">
+              <source src="./static/videos/video_capture_process.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div> -->
+      <!--/ Capture Process. -->
+
+    </div>
+
+
+
+
+    <!-- Concurrent Work. -->
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Links</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            There's a lot of excellent work that was introduced around the same time as ours.
+          </p>
+          <p>
+            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+          </p>
+          <p>
+            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
+            both use deformation fields to model non-rigid scenes.
+          </p>
+          <p>
+            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
+          </p>
+          <p>
+            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Concurrent Work. -->
+
+  </div>
+
+
+
+</section>
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+@inproceedings{zhou2023relightable,
+  title={Relightable Neural Human Assets from Multi-view Gradient Illuminations},
+  author={Zhou, Taotao and He, Kai and Wu, Di and Xu, Teng and Zhang, Qixuan and Shao, Kuixiang and Chen, Wenzheng and Xu, Lan and Yu, Jingyi},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4315--4327},
+  year={2023}
+}
+    </code></pre>
+  </div>
+
+
+</section> -->
+
+<!-- 
+<section class="section" id="acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Acknowledgements</h2>
+
+    <div class="content has-text-justified">
+      <p>
+        We thank Chang for data acquisition. We thank Hongyang Lin, Qiwei Qiu and Qingcheng Zhao for building the hardware. This work was supported by National Key R&D Program of China (2022YFF0902301), NSFC programs (61976138, 61977047), STCSM (2015F0203-000-06), and SHMEC (2019-01-07-00-01-E00003). We also acknowledge support from Shanghai Frontiers Science Center of Human-centered Artificial Intelligence (ShangHAI).
+      </p>
+    </div>
+  </div>
+
+
+</section> -->
+
+
+
+<footer class="footer">
+  <div class="container">
+
+
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The website template was borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We would like to thank Keunhong Park for sharing the template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
